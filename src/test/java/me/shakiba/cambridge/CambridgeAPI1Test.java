@@ -2,8 +2,6 @@ package me.shakiba.cambridge;
 
 import java.util.prefs.Preferences;
 
-import me.shakiba.cambridge.CambridgeAPI1;
-
 import org.testng.annotations.Test;
 
 import com.google.gson.Gson;
@@ -11,9 +9,16 @@ import com.google.gson.GsonBuilder;
 
 public class CambridgeAPI1Test {
 
-    String apiKey = Preferences.userRoot().node("/org/cambridge/api")
-            .get("apiKey", "");
-    CambridgeAPI1 api = new CambridgeAPI1(apiKey);
+    private CambridgeAPI1 api;
+
+    public CambridgeAPI1Test() throws Exception {
+        String apiKey = Preferences.userRoot().node("/org/cambridge/api")
+                .get("apiKey", null);
+        if (apiKey == null) {
+            throw new Exception("API Key is not set.");
+        }
+        api = new CambridgeAPI1(apiKey);
+    }
 
     public void dictionaries() throws Exception {
         view(api.dictionaries());
