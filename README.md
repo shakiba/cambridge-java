@@ -19,4 +19,4 @@ Simply add it to your Maven project dependencies.
 </dependency>
 ```
 
-Other official clients can be found [here](http://dictionary-api.cambridge.org/index.php/help/resources).
+Official Cambridge dictionary clients for other languages can be found [here](http://dictionary-api.cambridge.org/index.php/help/resources).
