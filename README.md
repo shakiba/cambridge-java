@@ -18,5 +18,3 @@ Simply add it to your Maven project dependencies.
     <version>0.1.0</version>
 </dependency>
 ```
-
-Official Cambridge dictionary clients for other languages can be found [here](http://dictionary-api.cambridge.org/index.php/help/resources).
