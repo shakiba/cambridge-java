@@ -1,7 +1,7 @@
-cambridge-java
+Cambridge Dictionary API for Java
 ==============
 
-Cambridge Dictionary API for Java
+Please visit [Cambridge Dictionary API](http://dictionary-api.cambridge.org/) website to get your API Key.
 
 #### Usage
 
